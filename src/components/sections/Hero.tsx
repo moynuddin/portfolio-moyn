@@ -50,8 +50,8 @@ export default function Hero() {
   };
 
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden grid-bg"
     >
       {/* Floating Canvas Particles */}
@@ -64,16 +64,16 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Text Column */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-7 flex flex-col space-y-6 text-center lg:text-left items-center lg:items-start"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             {/* Greeting badge */}
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-primary/30 glass-premium text-xs font-semibold text-accent uppercase tracking-widest"
             >
@@ -82,7 +82,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Main Name Heading */}
-            <motion.h1 
+            <motion.h1
               variants={itemVariants}
               className="font-heading font-extrabold text-4xl sm:text-6xl xl:text-7xl leading-tight tracking-tight text-text-primary"
             >
@@ -90,7 +90,7 @@ export default function Hero() {
             </motion.h1>
 
             {/* Looping Title Typing Effect */}
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="h-10 sm:h-12 flex items-center"
             >
@@ -100,7 +100,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Summary Tagline */}
-            <motion.p 
+            <motion.p
               variants={itemVariants}
               className="text-base sm:text-lg text-text-muted max-w-xl leading-relaxed"
             >
@@ -108,28 +108,28 @@ export default function Hero() {
             </motion.p>
 
             {/* CTA Buttons */}
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full sm:w-auto"
             >
-              <Button 
-                variant="primary" 
-                size="lg" 
+              <Button
+                variant="primary"
+                size="lg"
                 className="w-full sm:w-auto flex items-center space-x-2 shadow-lg shadow-primary/20"
                 onClick={handleScrollToProjects}
               >
                 <span>Explore Work</span>
                 <ArrowRight className="w-4 h-4" />
               </Button>
-              
-              <a 
-                href="/Moin_resume.pdf" 
+
+              <a
+                href="/Moin_resume.pdf"
                 download="Moin_Uddin_Resume.pdf"
                 className="w-full sm:w-auto"
               >
-                <Button 
-                  variant="secondary" 
-                  size="lg" 
+                <Button
+                  variant="secondary"
+                  size="lg"
                   className="w-full sm:w-auto flex items-center justify-center space-x-2 border-surface-border"
                 >
                   <Download className="w-4 h-4 text-accent" />
@@ -139,7 +139,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Social profiles linking */}
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="flex items-center space-x-4 pt-6"
             >
@@ -167,7 +167,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Right Image/Graphic Column */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-5 flex justify-center items-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -176,7 +176,7 @@ export default function Hero() {
             <div className="relative group w-72 h-72 sm:w-96 sm:h-96">
               {/* Outer spinning borders & shadows */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary via-secondary to-accent opacity-50 blur-xl group-hover:scale-105 transition-transform duration-500 pointer-events-none" />
-              
+
               <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-accent opacity-30 animate-pulse duration-[3s] pointer-events-none" />
 
               {/* Glass container wrapping the generated profile photo */}
@@ -193,15 +193,15 @@ export default function Hero() {
               </div>
 
               {/* Subtle orbital stats label decoration */}
-              <motion.div 
+              <motion.div
                 className="absolute -top-3 -right-3 px-4 py-2 rounded-xl border border-surface-border glass-premium shadow-xl pointer-events-none hidden sm:block"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
                 <span className="text-xs font-bold text-accent">AI Enthusiast 🤖</span>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className="absolute -bottom-3 -left-3 px-4 py-2 rounded-xl border border-surface-border glass-premium shadow-xl pointer-events-none hidden sm:block"
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
@@ -213,10 +213,10 @@ export default function Hero() {
 
         </div>
       </div>
-      
+
       {/* Scroll indicator banner */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center">
-        <a 
+        <a
           href="#about"
           className="flex flex-col items-center text-xs text-text-muted hover:text-accent transition-colors duration-200"
           onClick={(e) => {
@@ -232,7 +232,7 @@ export default function Hero() {
         >
           <span className="uppercase tracking-widest mb-1.5 font-semibold text-[10px]">Scroll Down</span>
           <div className="w-6 h-10 border border-surface-border rounded-full flex justify-center p-1.5">
-            <motion.div 
+            <motion.div
               className="w-1.5 h-1.5 bg-accent rounded-full"
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

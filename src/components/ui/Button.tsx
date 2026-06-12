@@ -20,10 +20,11 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyles = 'inline-flex items-center justify-center font-heading font-semibold tracking-wide rounded-full transition-all duration-300 outline-none cursor-pointer border border-transparent select-none';
-  
+
   const variants = {
     primary: 'bg-gradient-to-r from-primary to-secondary text-white shadow-md shadow-primary/10 hover:shadow-primary/35 hover:brightness-105 border-none',
-    secondary: 'glass border-surface-border text-text-primary hover:bg-surface/50',
+    secondary:
+      'border border-primary/20 bg-primary/5 text-primary hover:bg-primary/10 hover:border-primary/40',
     outline: 'border border-text-primary/15 text-text-primary hover:bg-text-primary/5 hover:border-text-primary/30',
     ghost: 'text-text-secondary hover:text-text-primary hover:bg-surface/30 border-none',
   };
