@@ -184,7 +184,7 @@ export default function Hero() {
                 <div className="w-full h-full rounded-full overflow-hidden relative">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/profile_2.jpeg"
+                    src="/Profile_2.jpeg"
                     alt="Moyn Uddin Profile Picture"
                     className="w-full h-full object-cover rounded-full scale-105 group-hover:scale-110 transition-transform duration-500 ease-out"
                   />
